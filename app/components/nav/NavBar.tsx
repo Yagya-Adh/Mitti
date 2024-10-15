@@ -21,31 +21,31 @@ const routes: Iroutes[] = [
 const NavBar = () => {
   return (
     <nav className="bg-mitti-darkBodyColor">
-      <div className="px-10 max-w-screen-2xl mx-auto">
-        <div className="flex flex-row items-center justify-between">
-          <Link href="/">
-            <Image src={homeLogo} alt="main_logo_" className="" />
-          </Link>
+      <div className="flex flex-row items-center justify-between px-10 max-w-screen-2xl mx-auto ">
+        <Link href="/">
+          <Image src={homeLogo} alt="main_logo_" className="" />
+        </Link>
 
-          <ul className="flex items-center">
-            {routes?.map((list) => (
-              <Link href={list.path} key={list.id}>
-                <li className="font-bold p-4">{list.routeName}</li>
-              </Link>
-            ))}
-          </ul>
+        <ul className="flex items-center font-serif">
+          {routes?.map((list) => (
+            <Link href={list.path} key={list.id}>
+              <li className="text-xl p-4 py-5 border-b-4 border-b-transparent hover:border-b-mitti-secondaryTextColor">
+                {list.routeName}
+              </li>
+            </Link>
+          ))}
+        </ul>
 
-          <div className="flex items-center justify-between">
-            <h2 className="flex items-center">
-              <UserIcon className="size-8" />
-              LOGIN
-            </h2>
+        <div className="flex items-center justify-between font-mono">
+          <h2 className="flex items-center px-4">
+            <UserIcon className="size-6 transform  hover:rotate-12" />
+            <span className="px-1">LOGIN</span>
+          </h2>
 
-            <h4 className="flex items-center">
-              <ShoppingCartIcon className="size-8" />
-              ITEMS
-            </h4>
-          </div>
+          <h4 className="flex items-center px-4">
+            <ShoppingCartIcon className="size-6 " />
+            <span className="px-1">ITEMS</span>
+          </h4>
         </div>
       </div>
     </nav>

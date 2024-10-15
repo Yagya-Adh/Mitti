@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "routeHead": "Quick Links",
+    "routes": [
+      { "id": 1, "path": "", "linkName": "All product" },
+      { "id": 2, "path": "", "linkName": "Collection Page" },
+      { "id": 3, "path": "", "linkName": "Blog List" },
+      { "id": 4, "path": "", "linkName": "Style Guide" },
+      { "id": 5, "path": "", "linkName": "license" },
+      { "id": 6, "path": "", "linkName": "Changelog" }
+    ]
+  },
+  {
+    "id": 2,
+    "routeHead": "Policy Page",
+    "routes": [
+      { "id": 1, "path": "", "linkName": "Shipping policy" },
+      { "id": 2, "path": "", "linkName": "Refund policy" },
+      { "id": 3, "path": "", "linkName": "Privacy policy" },
+      { "id": 4, "path": "", "linkName": "Terms condition" }
+    ]
+  }
+]
