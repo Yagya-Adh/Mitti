@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className="bg-mitti-darkBodyColor text-mitti-secondaryTextColor">
       <FooterTopBar />
-      <div className="mx-auto max-w-screen-2xl py-60 px-10">
+      <div className="mx-auto max-w-screen-2xl py-10 px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <GridOne />
           <GridTwo />
@@ -30,7 +30,7 @@ export default Footer;
 
 const FooterTopBar = () => {
   return (
-    <div className="flex flex-col justify-center items-center ">
+    <div className="flex flex-col justify-center items-center py-10">
       <h2 className="font-serif text-3xl max-w-sm text-center capitalize">
         Subscribe to the newsletter and get 10% off
       </h2>
