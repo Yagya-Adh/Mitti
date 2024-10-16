@@ -20,7 +20,7 @@ const routes: Iroutes[] = [
 
 const NavBar = () => {
   return (
-    <nav className="bg-mitti-darkBodyColor">
+    <nav className="bg-mitti-darkBodyColor sticky top-0 z-20">
       <div className="flex flex-row items-center justify-between px-10 max-w-screen-2xl mx-auto ">
         <Link href="/">
           <Image src={homeLogo} alt="main_logo_" className="" />

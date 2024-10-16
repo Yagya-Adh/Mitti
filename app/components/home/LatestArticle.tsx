@@ -30,7 +30,10 @@ const LatestArticle = () => {
   return (
     <>
       <div className="mx-auto max-w-screen-2xl px-10">
-        <SectionHeading title="Latest New Articles & News Blog" />
+        <SectionHeading
+          title="Latest New Articles & News Blog"
+          buttonName="Discover More"
+        />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {latestNewData?.map((list) => (
             <div className="flex flex-col py-10 " key={list.id}>
