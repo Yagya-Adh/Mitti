@@ -15,7 +15,7 @@ const Footer = () => {
     <div className="bg-mitti-darkBodyColor text-mitti-secondaryTextColor">
       <FooterTopBar />
       <div className="mx-auto max-w-screen-2xl py-10 px-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
           <GridOne />
           <GridTwo />
           <GridThree />
@@ -30,16 +30,16 @@ export default Footer;
 
 const FooterTopBar = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-10">
+    <div className="flex flex-col justify-center items-center py-20">
       <h2 className="font-serif text-3xl max-w-sm text-center capitalize">
         Subscribe to the newsletter and get 10% off
       </h2>
 
-      <div className="flex items-center w-1/3 justify-center py-10 relative">
+      <div className="flex items-center w-1/3 justify-center relative py-10">
         <input
           type="text"
           placeholder="Email Address"
-          className="text-2xl py-2 px-2 relative w-full transition-all ease-in-out duration-200   focus:outline-none shadow-sm hover:border-black hover:border border-transparent"
+          className="border-transparent hover:border hover:border-black text-2xl py-2 px-2 w-full transition-all ease-in-out duration-500 focus:outline-none"
         />
 
         <div className="absolute right-3 ">
@@ -69,17 +69,17 @@ const GridOne = () => {
       </p>
 
       <div className="flex flex-col ">
-        <h2 className="font-serif text-4xl text-mitti-secondaryTextColor">
+        <h2 className="font-serif text-4xl text-mitti-secondaryTextColor ">
           Follow Us
         </h2>
         {/* social */}
         <div className="flex items-center py-5">
           {icons?.map((listing) => (
-            <div className="px-1" key={listing.id}>
+            <div className="" key={listing.id}>
               <Image
                 src={listing.icon}
                 alt={listing.name}
-                className="border rounded-full border-mitti-paragraphColor p-2 size-10 "
+                className="border rounded-full border-mitti-paragraphColor p-2 size-10 me-1"
               />
             </div>
           ))}
@@ -96,11 +96,11 @@ const GridTwo = () => {
     <>
       {data?.slice(0, 1).map((list) => (
         <div className="" key={list.id}>
-          <h1 className="text-3xl font-serif">{list.routeHead}</h1>
-          <div>
+          <h1 className="text-3xl font-serif ">{list.routeHead}</h1>
+          <div className="py-4">
             {list.routes.map((route) => (
               <ul key={route.id}>
-                <li className="font-bold hover:underline leading-10">
+                <li className="font-semibold hover:underline leading-10">
                   {route.linkName}
                 </li>
               </ul>
@@ -118,10 +118,10 @@ const GridThree = () => {
       {data?.slice(1, 2).map((list) => (
         <div className="" key={list.id}>
           <h1 className="text-3xl font-serif">{list.routeHead}</h1>
-          <div>
+          <div className="py-4">
             {list.routes.map((route) => (
               <ul key={route.id}>
-                <li className="font-bold hover:underline leading-10">
+                <li className="font-semibold hover:underline leading-10">
                   {route.linkName}
                 </li>
               </ul>
@@ -148,10 +148,10 @@ const GridFour = () => {
     <>
       {informationData?.map((list) => (
         <div className="flex flex-col" key={list.id}>
-          <h1 className="text-3xl font-serif">{list.head}</h1>
+          <h1 className="text-3xl font-serif ">{list.head}</h1>
 
-          <div className="">
-            <h2 className="font-bold leading-10 ">
+          <div className="py-4">
+            <h2 className="font-semibold leading-10 ">
               Address:{" "}
               <span className="hover:underline font-normal py-2">
                 {" "}
@@ -159,13 +159,13 @@ const GridFour = () => {
               </span>
             </h2>
 
-            <h3 className="font-bold leading-10">
+            <h3 className="font-semibold leading-10">
               Email:{" "}
               <span className="hover:underline font-normal py-2">
                 {list.email}
               </span>
             </h3>
-            <h4 className="font-bold leading-10">
+            <h4 className="font-semibold leading-10">
               Phone:{" "}
               <span className="hover:underline font-normal py-2">
                 {list.phone}
