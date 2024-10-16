@@ -73,10 +73,10 @@ const NavBar = () => {
 
       <div
         className={`${
-          open
-            ? " -translate-y-96 transition-all ease-in-out duration-500 "
-            : "translate-y-1 transition-all ease-in-out duration-500 py-10  rounded-2xl"
-        } bg-mitti-darkBodyColor`}
+          !open
+            ? " -translate-y-96 transition-all ease-in-out duration-500 bg-none"
+            : "translate-y-1 transition-all ease-in-out duration-500 py-10 bg-mitti-darkBodyColor rounded-2xl"
+        } `}
       >
         <ul className="flex flex-col px-10 font-serif lg:hidden">
           {routes?.map((list) => (
