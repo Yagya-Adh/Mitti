@@ -5,9 +5,8 @@ import Marquee from "react-fast-marquee";
 
 interface ImarqueeCard {
   variant: string | "default-mitti" | "light-mitti" | "dark-mitti";
-  direct?: string;
 }
-const MarqueeCard = ({ variant, direct }: ImarqueeCard) =>
+const MarqueeCard = ({ variant }: ImarqueeCard) =>
   variant == "default-mitti" ? (
     <div className="bg-mitti-secondaryTextColor text-white">
       <Marquee>
