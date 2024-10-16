@@ -39,7 +39,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between font-mono">
           <Link href={"/login"}>
             <h2 className="flex items-center px-4">
-              <UserIcon className="size-6 transform  hover:rotate-12" />
+              <UserIcon className="size-6 hover:transform hover:-rotate-180" />
               <span className="px-1">LOGIN</span>
             </h2>
           </Link>

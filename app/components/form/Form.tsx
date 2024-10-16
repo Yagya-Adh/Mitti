@@ -313,37 +313,34 @@ const Form = ({ variant }: Iform) =>
     </>
   ) : variant == "page-not-found" ? (
     <>
-      <div className="w-full mx-auto  max-w-screen-2xl flex flex-col justify-center items-center p-10">
-        <form onSubmit={() => alert("sign up ")} className="w-1/2 ">
-          <div className="flex flex-col bg-mitti-darkBodyColor py-5 p-10 w-full">
-            <div className=" text-center">
-              <h1 className="text-9xl font-serif font-bold py-4">404</h1>
-              <h1 className="text-2xl font-serif font-bold py-4">
-                Page Not Found
-              </h1>
-              <p>
-                The page you are looking for doesn&apos;t exist or has been
-                moved
-              </p>
-            </div>
-          </div>
+      <div className="bg-mitti-bodyColorTwo">
+        <div className="mx-auto  max-w-screen-2xl flex flex-col justify-center items-center h-screen">
+          <h1 className="text-9xl text-center py-4 scale-150 font-halant font-extrabold">
+            404
+          </h1>
+          <h1 className="text-2xl text-center font-serif font-bold py-4">
+            Page Not Found
+          </h1>
+          <p>
+            The page you are looking for doesn&apos;t exist or has been moved
+          </p>
 
           <div className="flex items-center justify-center">
             <Link
               href={"/"}
-              className=" text-center bg-mitti-secondaryTextColor hover:bg-black text-white capitalize   flex justify-center items-center font-serif text-xl mx-1 px-10 py-5 "
+              className="text-center bg-mitti-secondaryTextColor hover:bg-black text-white capitalize  flex justify-center items-center font-serif text-xl mx-1 my-5 px-5 py-2"
             >
               Go Home
             </Link>
 
             <Link
               href={"/contact-us"}
-              className=" text-center border border-mitti-secondaryTextColor text-mitti-secondaryTextColor hover:bg-mitti-secondaryTextColor hover:text-white capitalize  flex justify-center items-center font-serif text-xl mx-1 px-10 py-5"
+              className="text-center border border-mitti-secondaryTextColor text-mitti-secondaryTextColor hover:bg-mitti-secondaryTextColor hover:text-white capitalize  flex justify-center items-center font-serif text-xl mx-1 my-5 px-5 py-2"
             >
               Contact Us
             </Link>
           </div>
-        </form>
+        </div>
       </div>
     </>
   ) : null;

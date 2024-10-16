@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        halant: ["Halant", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -19,16 +22,7 @@ const config: Config = {
           borderColor: "#d3cfc1",
           transparent: "#fff0",
           darkBodyColor: "#ebe6d7",
-          //   {
-          //     --
-          //     --black: #333;
-          //     --
-          //     --;
-          //     --;
-          //     --whitesmoke: whitesmoke;
-          //     --;
-          //     --;
-          // }
+          bodyColorTwo: "#f6f4ed",
         },
       },
     },

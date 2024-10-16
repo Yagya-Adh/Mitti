@@ -12,6 +12,7 @@ const Button = ({ buttonName, size, variant }: IPropsButton) =>
     <button
       className={`
         ${size ? size : "text-xl"}
+        group
         font-bold 
          font-serif text-mitti-paragraphColor border-b-2  border-mitti-paragraphColor relative flex items-center`}
     >
@@ -23,7 +24,7 @@ const Button = ({ buttonName, size, variant }: IPropsButton) =>
           className={`
             ${
               size == "text-sm" ? "size-5" : "size-6"
-            } -rotate-45 hover:rotate-0 transition-all ease-in-out duration-500`}
+            } -rotate-45 group-hover:rotate-0 transition-all ease-in-out duration-500`}
         />
       </div>
     </button>
