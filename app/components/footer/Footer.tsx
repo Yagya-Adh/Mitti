@@ -39,7 +39,7 @@ const FooterTopBar = () => {
         <input
           type="text"
           placeholder="Email Address"
-          className="border-transparent hover:border hover:border-black text-2xl py-2 px-2 w-full transition-all ease-in-out duration-500 focus:outline-none"
+          className="font-mono border-transparent hover:border hover:border-black text-xl py-2 px-2 w-full transition-all ease-in-out duration-500 focus:outline-none"
         />
 
         <div className="absolute right-3 ">

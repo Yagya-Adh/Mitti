@@ -37,15 +37,19 @@ const NavBar = () => {
         </ul>
 
         <div className="flex items-center justify-between font-mono">
-          <h2 className="flex items-center px-4">
-            <UserIcon className="size-6 transform  hover:rotate-12" />
-            <span className="px-1">LOGIN</span>
-          </h2>
+          <Link href={"/login"}>
+            <h2 className="flex items-center px-4">
+              <UserIcon className="size-6 transform  hover:rotate-12" />
+              <span className="px-1">LOGIN</span>
+            </h2>
+          </Link>
 
-          <h4 className="flex items-center px-4">
-            <ShoppingCartIcon className="size-6 " />
-            <span className="px-1">ITEMS</span>
-          </h4>
+          <Link href={"/cart"}>
+            <h4 className="flex items-center px-4">
+              <ShoppingCartIcon className="size-6 " />
+              <span className="px-1">ITEMS</span>
+            </h4>
+          </Link>
         </div>
       </div>
     </nav>
