@@ -1,16 +1,16 @@
 "use client";
+
 import Form from "../components/form/Form";
 import NavBar from "../components/nav/NavBar";
 import Footer from "../components/footer/Footer";
-
-const Login = () => {
+const SignUp = () => {
   return (
     <>
       <NavBar />
-      <Form variant="login" />
+      <Form variant="sign-up" />
       <Footer />
     </>
   );
 };
 
-export default Login;
+export default SignUp;

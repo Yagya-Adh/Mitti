@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <>
       <NavBar />
-      <Form variant="login" />
+      <Form variant="page-not-found" />
       <Footer />
     </>
   );

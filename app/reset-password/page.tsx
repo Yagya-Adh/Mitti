@@ -3,14 +3,14 @@ import Form from "../components/form/Form";
 import NavBar from "../components/nav/NavBar";
 import Footer from "../components/footer/Footer";
 
-const Login = () => {
+const ResetPassword = () => {
   return (
     <>
       <NavBar />
-      <Form variant="login" />
+      <Form variant="reset-password" />
       <Footer />
     </>
   );
 };
 
-export default Login;
+export default ResetPassword;
