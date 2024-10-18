@@ -3,9 +3,9 @@
 import Image, { StaticImageData } from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import SectionHeading from "../heading/SectionHeading";
-import bathroomImage from "@/app/assets/images/home/featured/bathroom.webp";
-import livingImage from "@/app/assets/images/home/featured/Living Room.webp";
-import homeDecorImage from "@/app/assets/images/home/featured/Home decor.webp";
+import bathroomImage from "/public/assets/images/home/featured/bathroom.webp";
+import livingImage from "/public/assets/images/home/featured/Living Room.webp";
+import homeDecorImage from "/public/assets/images/home/featured/Home decor.webp";
 import CrossMarquee from "../marquee/CrossMarquee";
 
 interface IlatestNewData {
@@ -59,6 +59,8 @@ const FeaturedCard = () => {
                   src={list.image}
                   className="hover:scale-125 ease-in-out transition-all duration-700  h-full w-full"
                   alt="latest_"
+                  height={400}
+                  width={400}
                 />
               </div>
               <div className="group flex justify-between items-center border-b border-b-mitti-secondaryTextColor py-2">

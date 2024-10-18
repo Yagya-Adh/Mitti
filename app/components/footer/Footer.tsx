@@ -2,19 +2,19 @@
 
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import mainLogo from "@/app/assets/images/mainLogo.svg";
-import facebook from "@/app/assets/icons/facebook-svgrepo-com.svg";
-import instagram from "@/app/assets/icons/instagram-svgrepo-com.svg";
-import linkedin from "@/app/assets/icons/linkedin-svgrepo-com.svg";
-import pinterest from "@/app/assets/icons/pinterest-svgrepo-com.svg";
-import youtube from "@/app/assets/icons/youtube-play-svgrepo-com.svg";
+import mainLogo from "/public/assets/images/mainLogo.svg";
+import facebook from "/public/assets/icons/facebook-svgrepo-com.svg";
+import instagram from "/public/assets/icons/instagram-svgrepo-com.svg";
+import linkedin from "/public/assets/icons/linkedin-svgrepo-com.svg";
+import pinterest from "/public/assets/icons/pinterest-svgrepo-com.svg";
+import youtube from "/public/assets/icons/youtube-play-svgrepo-com.svg";
 
 import footerGridData from "@/footerData.json";
 const Footer = () => {
   return (
     <div className="bg-mitti-darkBodyColor text-mitti-secondaryTextColor">
       <FooterTopBar />
-      <div className="mx-auto max-w-screen-2xl py-10 px-10">
+      <div className="mx-auto max-w-screen-2xl py-10 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
           <GridOne />
           <GridTwo />
@@ -52,16 +52,22 @@ const FooterTopBar = () => {
 
 const icons = [
   { id: 1, icon: facebook, name: "facebook" },
-  { id: 1, icon: instagram, name: "facebook" },
-  { id: 1, icon: linkedin, name: "facebook" },
-  { id: 1, icon: pinterest, name: "facebook" },
-  { id: 1, icon: youtube, name: "facebook" },
+  { id: 2, icon: instagram, name: "Instagram" },
+  { id: 3, icon: linkedin, name: "Linkein" },
+  { id: 4, icon: pinterest, name: "Pinterest" },
+  { id: 5, icon: youtube, name: "Youtube" },
 ];
 
 const GridOne = () => {
   return (
     <div className="flex flex-col">
-      <Image src={mainLogo} alt="footer_image_" className="" />
+      <Image
+        src={mainLogo}
+        height={120}
+        width={120}
+        alt="footer_image_"
+        className=""
+      />
 
       <p className="py-4 ">
         Connect with us for updates, FAQs, and support. Shop confidently with
@@ -79,6 +85,8 @@ const GridOne = () => {
               <Image
                 src={listing.icon}
                 alt={listing.name}
+                height={10}
+                width={10}
                 className="border rounded-full border-mitti-paragraphColor p-2 size-10 me-1"
               />
             </div>

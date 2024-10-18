@@ -1,7 +1,7 @@
 "use client";
 import PictureCard from "../card/PictureCard";
-import expImage from "@/app/assets/images/home/betterPrice.webp";
-import expTwoImage from "@/app/assets/images/home/elevateYour.webp";
+import expImage from "/public/assets/images/home/betterPrice.webp";
+import expTwoImage from "/public/assets/images/home/elevateYour.webp";
 
 const data = [
   { id: 1, image: expImage, text: "Better price, Great furniture" },

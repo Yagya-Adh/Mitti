@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import homeLogo from "@/app/assets/images/mainLogo.svg";
+import homeLogo from "/public/assets/images/mainLogo.svg";
 import {
   Bars3Icon,
   ShoppingCartIcon,
@@ -40,7 +40,13 @@ const NavBar = () => {
             <Bars3Icon className="size-8" />
           </div>
           <Link href="/">
-            <Image src={homeLogo} alt="main_logo_" className="" />
+            <Image
+              src={homeLogo}
+              height={120}
+              width={120}
+              alt="main_logo_"
+              className=""
+            />
           </Link>
 
           <ul className="items-center font-serif hidden lg:flex">

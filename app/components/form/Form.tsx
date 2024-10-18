@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import keyLockIcon from "@/app/assets/icons/Key_lock.svg";
+import keyLockIcon from "/public/assets/icons/Key_lock.svg";
 interface Iform {
   variant:
     | string

@@ -10,8 +10,8 @@ const About = () => {
   return (
     <div>
       <NavBar />
-
       <Elevate />
+      <VideoAndQuestion />
       <BrandMarquee />
       <Footer />
     </div>

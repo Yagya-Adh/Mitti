@@ -1,13 +1,13 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
-import aBrandImage from "@/app/assets/images/home/latestArticle/aCompany.svg";
-import xBrandImage from "@/app/assets/images/home/latestArticle/companyX.svg";
-import mBrandImage from "@/app/assets/images/home/latestArticle/mountainCompany.svg";
-import faceBrandImage from "@/app/assets/images/home/latestArticle/faceCompany.svg";
-import leafBrandImage from "@/app/assets/images/home/latestArticle/leafCompany.svg";
-import nineBrandImage from "@/app/assets/images/home/latestArticle/nineCompany.svg";
-import rBrandImage from "@/app/assets/images/home/latestArticle/rCompany.svg";
-import yourBrandImage from "@/app/assets/images/home/latestArticle/yourCompany.svg";
+import aBrandImage from "/public/assets/images/home/latestArticle/aCompany.svg";
+import xBrandImage from "/public/assets/images/home/latestArticle/companyX.svg";
+import mBrandImage from "/public/assets/images/home/latestArticle/mountainCompany.svg";
+import faceBrandImage from "/public/assets/images/home/latestArticle/faceCompany.svg";
+import leafBrandImage from "/public/assets/images/home/latestArticle/leafCompany.svg";
+import nineBrandImage from "/public/assets/images/home/latestArticle/nineCompany.svg";
+import rBrandImage from "/public/assets/images/home/latestArticle/rCompany.svg";
+import yourBrandImage from "/public/assets/images/home/latestArticle/yourCompany.svg";
 import Marquee from "react-fast-marquee";
 
 interface IData {
@@ -33,6 +33,8 @@ const BrandMarquee = () => {
             key={list.id}
             src={list.brandImage}
             alt="brand_"
+            height={160}
+            width={160}
             className="hover:-translate-y-3 ease-in-out duration-500 transition-all mx-10"
           />
         ))}

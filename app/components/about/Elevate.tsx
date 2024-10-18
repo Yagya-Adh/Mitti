@@ -1,14 +1,20 @@
 "use client";
 import React from "react";
-import elevateImage from "@/app/assets/images/about/elevate.avif";
+import elevateImage from "/public/assets/images/about/elevate.avif";
 import Image from "next/image";
 import Button from "../button/Button";
 const Elevate = () => {
   return (
     <div className="bg-mitti-bodyColorTwo">
-      <div className="max-w-screen-2xl mx-auto px-10 py-20 ">
+      <div className="max-w-screen-2xl mx-auto px-4 py-20 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
-          <Image src={elevateImage} alt="elevate_" className="h-full w-full " />
+          <Image
+            src={elevateImage}
+            alt="elevate_"
+            height={800}
+            width={800}
+            className="h-full w-full "
+          />
           <ElevateInformation />
         </div>
       </div>
