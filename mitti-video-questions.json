@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "What Is Mitti And What Kind Of Products Or Services Do You Offer?",
+    "answer": "Mitti is a comprehensive platform dedicated to providing high-quality, eco-friendly products ranging from home essentials to personal care items. Our mission is to promote sustainability and innovation in every aspect of our business."
+  },
+  {
+    "id": 2,
+    "question": "Can I Track My Order After It Has Been Placed, And How Do I Know When It Has Been Shipped?",
+    "answer": "Yes, you can track your order once it has been placed. You will receive a tracking number via email as soon as your order has been shipped. This tracking number can be used on our website to monitor the status and location of your package until it arrives at your doorstep."
+  },
+  {
+    "id": 3,
+    "question": "What Is Mitti's Return Policy, And What Should I Do If I Am Not Satisfied With My Purchase?",
+    "answer": "We offer a 30-day return policy to ensure your satisfaction. If you are not happy with your purchase for any reason, please contact our customer service team to initiate a return. We will provide you with instructions on how to return the item and process a refund or exchange."
+  },
+  {
+    "id": 4,
+    "question": "How Can I Stay Updated On New Products, Promotions, And Exclusive Offers From Mitti?",
+    "answer": "To stay updated on all the latest news, new product launches, promotions, and exclusive offers from Mitti, subscribe to our newsletter. You can sign up at the bottom of our homepage. We’ll send you regular updates so you never miss out on what’s new."
+  },
+  {
+    "id": 5,
+    "question": "Can I Customize My Order, And What Are The Options Available For Personalization?",
+    "answer": "Depending on the product or service, customization options may be available. These options are typically detailed on the product page. If you have specific customization requests or need more information, please contact our support team, and we will be happy to assist you with your personalized order."
+  }
+]

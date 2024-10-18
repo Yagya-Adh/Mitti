@@ -11,7 +11,7 @@ const SectionHeading = ({ title, describe, buttonName }: IPropsSection) => {
     <div>
       <div className="flex justify-between items-center py-4">
         <div className="text-mitti-secondaryTextColor">
-          <h1 className="text-4xl font-serif max-w-sm">{title}</h1>
+          <h2 className="text-4xl font-serif max-w-sm">{title}</h2>
           <p>{describe && describe}</p>
         </div>
         <Button buttonName={buttonName} variant="button-underline" />

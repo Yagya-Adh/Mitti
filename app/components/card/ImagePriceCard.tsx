@@ -47,7 +47,7 @@ const bestSellerProductsData: IbestSellerProductsData[] = [
     title: "Cozy Reading Chair",
     price: 350.0,
     actualPrice: null,
-    image: "/public/assets/images/allProducts/cozy_reading_chair.webp",
+    image: "/assets/images/allProducts/cozy_reading_chair.webp",
     sale: false,
   },
   {
