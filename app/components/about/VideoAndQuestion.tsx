@@ -42,16 +42,14 @@ const QuestionSection = () => {
   };
 
   return (
-    <div className="max-w-screen-2xl mx-auto px-10">
+    <div className="max-w-screen-2xl mx-auto px-10 py-5">
       {data?.map((list) => (
-        <div className="py-2" key={list.id}>
+        <div className="py-2 px-10" key={list.id}>
           <div
-            className=" text-mitti-secondaryTextColor flex justify-between items-center cursor-pointer"
+            className=" text-mitti-secondaryTextColor flex justify-between items-center cursor-pointer py-4 border-b border-b-mitti-secondaryTextColor w-full"
             onClick={() => handleDisplay(list.id)}
           >
-            <h1 className="font-serif font-bold text-xl  py-4 border-b border-b-mitti-secondaryTextColor w-full">
-              {list.question}
-            </h1>
+            <h1 className="font-serif  text-3xl">{list.question}</h1>
             <ArrowUpCircleIcon
               className={`             
                 size-10 transition-all ease-linear duration-200
@@ -60,8 +58,8 @@ const QuestionSection = () => {
           </div>
           {answerShow === list.id && (
             <p
-              className={`
-             text-xl text-mitti-paragraphColor py-2        
+              className={` border-b border-b-mitti-secondaryTextColor
+             text-xl text-mitti-paragraphColor py-2 transition-all ease-linear duration-400        
             ${answerShow == list.id ? "" : " -translate-y-96"}`}
             >
               {list.answer}

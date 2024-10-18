@@ -117,7 +117,7 @@ const ImagePriceCard = ({ varriant }: Icard) => {
                 src={list.image}
                 height={250}
                 width={250}
-                className="hover:scale-125 ease-in-out transition-all duration-700 h-full w-full"
+                className="hover:scale-125 transition-all ease-linear duration-700 h-full w-full"
                 alt="latest_"
               />
               {/* star */}
@@ -160,7 +160,7 @@ const ImagePriceCard = ({ varriant }: Icard) => {
                 src={list.image}
                 width={250}
                 height={250}
-                className="hover:bg-black group z-10 hover:scale-125 ease-in-out transition-all duration-700 h-full w-full"
+                className="hover:bg-black group z-10 hover:scale-125  transition-all ease-linear duration-700 h-full w-full"
                 alt="latest_"
               />
 

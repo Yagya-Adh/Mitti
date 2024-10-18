@@ -57,7 +57,7 @@ const FeaturedCard = () => {
               <div className="overflow-hidden h-['200px'] w-['100px']">
                 <Image
                   src={list.image}
-                  className="hover:scale-125 ease-in-out transition-all duration-700  h-full w-full"
+                  className="hover:scale-125 transition-all ease-linear duration-700  h-full w-full"
                   alt="latest_"
                   height={400}
                   width={400}
