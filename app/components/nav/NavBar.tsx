@@ -32,7 +32,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="bg-mitti-darkBodyColor sticky top-0 z-20">
-        <div className="flex flex-row items-center justify-between px-10 max-w-screen-2xl mx-auto ">
+        <div className="flex flex-row items-center justify-between  max-w-screen-2xl mx-auto ">
           <div
             className="py-5 flex items-center lg:hidden"
             onClick={handleOpenNavbar}

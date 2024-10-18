@@ -10,12 +10,10 @@ const data = [
 
 const PictureGroup = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto px-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {data?.map((list) => (
-          <PictureCard key={list.id} image={list.image} text={list.text} />
-        ))}
-      </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-4 px-4">
+      {data?.map((list) => (
+        <PictureCard key={list.id} image={list.image} text={list.text} />
+      ))}
     </div>
   );
 };
