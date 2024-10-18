@@ -2,6 +2,8 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../button/Button";
+import dataGrid from "@/aboutGrid.json";
+const data = dataGrid;
 
 const GridImageGroup = () => {
   return (
@@ -13,21 +15,6 @@ const GridImageGroup = () => {
 };
 
 export default GridImageGroup;
-
-const data = [
-  {
-    id: 1,
-    image: "/assets/images/about/ourGoal.avif",
-  },
-  {
-    id: 2,
-    image: "/assets/images/about/ourDream.avif",
-  },
-  {
-    id: 3,
-    image: "/assets/images/about/theRoad.avif",
-  },
-];
 
 const GridOne = () => {
   return (
@@ -70,17 +57,20 @@ const GridTwo = () => {
             />
           </div>
         ))}
-        <div className="grid grid-cols-1">
+        {/*  <div className="grid grid-cols-1 ">
           <p className="py-4">
             Our commitment to quality and craftsmanship ensures that you&apos;ll
             find unique items that reflect your personal style and enhance your
             home&apos;s ambiance.
           </p>
           <Button variant="button-underline" buttonName="Discover More" />
-        </div>
+        </div> */}
         {data.slice(2, 3).map((list) => (
-          <div key={list.id} className="overflow-hidden flex items-center">
-            <div className="absolute">
+          <div
+            key={list.id}
+            className="overflow-hidden flex items-center justify-between"
+          >
+            <div className="hidden  md:block items-center">
               <p className="py-4">
                 Our commitment to quality and craftsmanship ensures that
                 you&apos;ll find unique items that reflect your personal style
