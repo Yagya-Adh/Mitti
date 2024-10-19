@@ -3,7 +3,7 @@ import React from "react";
 import CardHeading from "./CardHead";
 const ShippingAddress = () => {
   return (
-    <div className="flex flex-col py-10 border">
+    <div className="flex flex-col my-10 border border-mitti-secondaryTextColor">
       <CardHeading Title="Shipping Address" isRequire={true} />
       <form className="flex flex-col px-4 py-2">
         <div className="flex flex-col">

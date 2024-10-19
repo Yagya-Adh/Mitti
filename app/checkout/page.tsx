@@ -21,10 +21,12 @@ const CheckOut = () => {
             <PaymentInformation />
           </div>
 
-          <div className="flex flex-col p-4  h-full">
-            <ItemOrder />
-            <OrderSummary />
-            <Button variant="button-default" buttonName="Place Order" />
+          <div className=" p-4 relative h-full">
+            <div className="sticky top-20 flex flex-col">
+              <ItemOrder />
+              <OrderSummary />
+              <Button variant="button-default" buttonName="Place Order" />
+            </div>
           </div>
         </div>
       </div>
