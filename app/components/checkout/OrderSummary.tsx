@@ -4,7 +4,7 @@ import CardHeading from "./CardHead";
 
 const OrderSummary = () => {
   return (
-    <div className=" border border-mitti-secondaryTextColor my-5 ">
+    <div className=" border border-mitti-secondaryTextColor my-5">
       <CardHeading Title="Order Summary" isRequire={false} />
 
       <div className="px-2 py-4">

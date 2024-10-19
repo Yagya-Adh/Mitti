@@ -12,8 +12,8 @@ import PaymentInformation from "../components/checkout/PaymentInformation";
 const CheckOut = () => {
   return (
     <div className="bg-mitti-bodyColor ">
-      <div className="max-w-screen-2xl mx-auto px-4 p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2  relative">
+      <div className="max-w-screen-2xl mx-auto px-4 p-10 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 relative">
           <div>
             <CustomerInformation />
             <ShippingAddress />
@@ -21,8 +21,8 @@ const CheckOut = () => {
             <PaymentInformation />
           </div>
 
-          <div className=" p-4 relative h-full">
-            <div className="sticky top-20 flex flex-col">
+          <div className="py-10 relative h-full">
+            <div className="flex flex-col justify-end sticky top-20 w-3/4">
               <ItemOrder />
               <OrderSummary />
               <Button variant="button-default" buttonName="Place Order" />

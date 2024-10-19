@@ -4,7 +4,7 @@ import CardHeading from "./CardHead";
 
 const CustomerInformation = () => {
   return (
-    <div className="flex flex-col my-10 border border-mitti-secondaryTextColor">
+    <div className="flex flex-col my-10 border border-mitti-borderColor">
       <CardHeading Title="Customer Info" isRequire={true} />
 
       <div className="flex flex-col p-4">
