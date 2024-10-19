@@ -70,7 +70,7 @@ const GridTwo = () => {
             key={list.id}
             className="overflow-hidden flex items-center justify-between"
           >
-            <div className="hidden  md:block items-center">
+            <div className="hidden  lg:block items-center">
               <p className="py-4">
                 Our commitment to quality and craftsmanship ensures that
                 you&apos;ll find unique items that reflect your personal style
@@ -82,7 +82,7 @@ const GridTwo = () => {
               src={list.image}
               width={250}
               height={100}
-              className="hover:scale-110 transition-all ease-linear duration-500"
+              className="hover:scale-110  transition-all ease-linear duration-500 h-full w-full lg:w-auto"
               alt="grid_image"
             />
           </div>
