@@ -27,21 +27,21 @@ const ShippingAddress = () => {
         </div>
 
         <div className="flex items-center justify-between">
-          <div className="flex flex-col py-2 w-1/2">
+          <div className="flex flex-col py-2 w-2/6 md:w-[223px]">
             <label htmlFor="">City *</label>
             <input
               className="focus:outline-none border border-black p-2"
               type="text"
             />
           </div>
-          <div className="flex flex-col py-2 w-1/2">
+          <div className="flex flex-col py-2 w-2/6 md:w-[223px]">
             <label htmlFor="">State/Province</label>
             <input
               className="focus:outline-none border border-black p-2"
               type="text"
             />
           </div>
-          <div className="flex flex-col py-2 w-1/2">
+          <div className="flex flex-col py-2 w-2/6 md:w-[223px]">
             <label htmlFor="">Zip/Postal Code *</label>
             <input
               className="focus:outline-none border border-black p-2"

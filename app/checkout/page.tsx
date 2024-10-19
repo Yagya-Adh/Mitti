@@ -21,8 +21,8 @@ const CheckOut = () => {
             <PaymentInformation />
           </div>
 
-          <div className="py-10 relative h-full">
-            <div className="flex flex-col justify-end sticky top-20 w-3/4">
+          <div className="py-10 relative h-full flex flex-col">
+            <div className="flex flex-col justify-center sticky top-20 md:w-2/3">
               <ItemOrder />
               <OrderSummary />
               <Button variant="button-default" buttonName="Place Order" />

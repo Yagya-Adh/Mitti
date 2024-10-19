@@ -30,12 +30,12 @@ export default Footer;
 
 const FooterTopBar = () => {
   return (
-    <div className="flex flex-col justify-center items-center py-20">
+    <div className="flex flex-col justify-center items-center py-20 px-2">
       <h2 className="font-serif text-3xl max-w-sm text-center capitalize">
         Subscribe to the newsletter and get 10% off
       </h2>
 
-      <div className="flex items-center w-1/3 justify-center relative py-10">
+      <div className="flex items-center w-full md:w-1/3 justify-center relative py-10">
         <input
           type="text"
           placeholder="Email Address"
