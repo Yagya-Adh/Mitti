@@ -26,7 +26,7 @@ export default Elevate;
 
 const ElevateInformation = () => {
   return (
-    <div className="flex flex-col  text-mitti-secondaryTextColor">
+    <aside className="flex flex-col  text-mitti-secondaryTextColor">
       <h1 className="text-5xl font-serif">
         Elevate Your Home with Timeless Decor and Unique Pieces
       </h1>
@@ -42,6 +42,6 @@ const ElevateInformation = () => {
       <div className="">
         <Button buttonName="Discover More" variant="button-underline" />
       </div>
-    </div>
+    </aside>
   );
 };

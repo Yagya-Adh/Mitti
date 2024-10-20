@@ -18,16 +18,16 @@ export default GridImageGroup;
 
 const GridOne = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto px-2">
+    <section className="max-w-screen-2xl mx-auto px-2">
       <div className="grid grid-cols-1 sm:grid-cols-2  items-center">
-        <div>
+        <aside>
           <p className="text-4xl font-serif max-w-xl">
             Building Mitti: Our Goals, Dreams, Achievements, and the Road Ahead
           </p>
-        </div>
+        </aside>
 
         {data.slice(0, 1).map((list) => (
-          <div key={list.id} className="overflow-hidden">
+          <aside key={list.id} className="overflow-hidden">
             <Image
               src={list.image}
               width={400}
@@ -35,19 +35,19 @@ const GridOne = () => {
               className="hover:scale-110 transition-all ease-linear duration-500"
               alt="grid_image"
             />
-          </div>
+          </aside>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
 const GridTwo = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto px-2">
+    <section className="max-w-screen-2xl mx-auto px-2">
       <div className="grid grid-cols-1 sm:grid-cols-2  items-center relative">
         {data.slice(1, 2).map((list) => (
-          <div key={list.id} className="overflow-hidden">
+          <aside key={list.id} className="overflow-hidden">
             <Image
               src={list.image}
               width={400}
@@ -55,7 +55,7 @@ const GridTwo = () => {
               className="hover:scale-110 transition-all ease-linear duration-500"
               alt="grid_image"
             />
-          </div>
+          </aside>
         ))}
         {/*  <div className="grid grid-cols-1 ">
           <p className="py-4">
@@ -66,7 +66,7 @@ const GridTwo = () => {
           <Button variant="button-underline" buttonName="Discover More" />
         </div> */}
         {data.slice(2, 3).map((list) => (
-          <div
+          <aside
             key={list.id}
             className="overflow-hidden flex items-center justify-between"
           >
@@ -85,9 +85,9 @@ const GridTwo = () => {
               className="hover:scale-110  transition-all ease-linear duration-500 h-full w-full lg:w-auto"
               alt="grid_image"
             />
-          </div>
+          </aside>
         ))}
       </div>
-    </div>
+    </section>
   );
 };

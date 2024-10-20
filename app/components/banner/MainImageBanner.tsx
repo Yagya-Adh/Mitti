@@ -16,14 +16,16 @@ const MainImageBanner = ({ Title }: Imain) => {
           width={1000}
           height={50}
         />
-        <div className="relative mx-auto max-w-screen-2xl bg-transparent">
+        <div className="relative mx-auto  max-w-screen-2xl bg-transparent">
           <div className="absolute bottom-24  z-20 w-full">
             <div className="flex justify-between items-center">
-              <h2 className="font-bold text-5xl text-white">{Title}</h2>
+              <h2 className="font-bold text-4xl text-white max-w-screen-sm">
+                {Title}
+              </h2>
               <div className="flex items-center text-white">
                 <HomeIcon className="size-7" />
                 <ChevronDoubleRightIcon className="size-7" />
-                <span>{Title}</span>
+                <span className="text-sm">{Title}</span>
               </div>
             </div>
           </div>
