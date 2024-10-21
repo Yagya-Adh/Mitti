@@ -1,15 +1,10 @@
 "use client";
-
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import mainLogo from "/public/assets/images/mainLogo.svg";
-import facebook from "/public/assets/icons/facebook-svgrepo-com.svg";
-import instagram from "/public/assets/icons/instagram-svgrepo-com.svg";
-import linkedin from "/public/assets/icons/linkedin-svgrepo-com.svg";
-import pinterest from "/public/assets/icons/pinterest-svgrepo-com.svg";
-import youtube from "/public/assets/icons/youtube-play-svgrepo-com.svg";
-
 import footerGridData from "@/footerData.json";
+import SocialList from "../social/SocialList";
+
 const Footer = () => {
   return (
     <div className="bg-mitti-darkBodyColor text-mitti-secondaryTextColor">
@@ -50,14 +45,6 @@ const FooterTopBar = () => {
   );
 };
 
-const icons = [
-  { id: 1, icon: facebook, name: "facebook" },
-  { id: 2, icon: instagram, name: "Instagram" },
-  { id: 3, icon: linkedin, name: "Linkein" },
-  { id: 4, icon: pinterest, name: "Pinterest" },
-  { id: 5, icon: youtube, name: "Youtube" },
-];
-
 const GridOne = () => {
   return (
     <div className="flex flex-col">
@@ -79,19 +66,7 @@ const GridOne = () => {
           Follow Us
         </h2>
         {/* social */}
-        <div className="flex items-center py-5">
-          {icons?.map((listing) => (
-            <div className="" key={listing.id}>
-              <Image
-                src={listing.icon}
-                alt={listing.name}
-                height={10}
-                width={10}
-                className="border rounded-full border-mitti-paragraphColor p-2 size-10 me-1"
-              />
-            </div>
-          ))}
-        </div>
+        <SocialList ishover={false} item={6} />
       </div>
     </div>
   );

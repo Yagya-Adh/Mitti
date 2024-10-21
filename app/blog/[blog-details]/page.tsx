@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import MainImageBanner from "@/app/components/banner/MainImageBanner";
 import singleData from "@/singleDetailsData.json";
+import SocialList from "@/app/components/social/SocialList";
 
 interface IsingleData {
   id: number;
@@ -46,12 +47,15 @@ const SingleDetails = () => {
   return (
     <>
       <section className="flex justify-between border-b border-b-mitti-secondaryTextColor py-4">
-        <h2 className="">
+        <h2 className="font-serif">
           <span className="font-bold">Date:</span> September 5, 2024
         </h2>
 
-        <h4 className="">
+        <h4 className="flex items-center">
           <span className="font-bold">Share On:</span>
+          <div>
+            <SocialList ishover={true} item={4} />
+          </div>
         </h4>
       </section>
       <div className="py-20">
