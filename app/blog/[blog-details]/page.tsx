@@ -46,16 +46,13 @@ const DateTime = () => {
 const SingleDetails = () => {
   return (
     <>
-      <section className="flex justify-between border-b border-b-mitti-secondaryTextColor py-4">
+      <section className="flex justify-between items-center border-b border-b-mitti-secondaryTextColor">
         <h2 className="font-serif">
           <span className="font-bold">Date:</span> September 5, 2024
         </h2>
-
         <h4 className="flex items-center">
           <span className="font-bold">Share On:</span>
-          <div>
-            <SocialList ishover={true} item={4} />
-          </div>
+          <SocialList ishover={true} item={4} />
         </h4>
       </section>
       <div className="py-20">

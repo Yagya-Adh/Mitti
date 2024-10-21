@@ -4,35 +4,19 @@ import Button from "../button/Button";
 import Image, { StaticImageData } from "next/image";
 // import { Rating } from "@smastrom/react-rating";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-
-import softImage from "/public/assets/images/blog/softTextile.webp";
-// import cozyChair from "/public/assets/images/allProducts/cozy_reading_chair.webp";
-import transformImage from "/public/assets/images/blog/transformLiving.webp";
-import sereneImage from "/public/assets/images/blog/sereneBathroom.webp";
+import latestProductData from "@/latestProduct.json";
+import bestSellData from "@/bestSeller.json";
+interface IlatestNewData {
+  id: number;
+  title: string;
+  image: string;
+}
+const latestNewData: IlatestNewData[] = latestProductData;
 
 interface Icard {
   varriant: "image-card" | "image-price-card";
 }
 
-interface IlatestNewData {
-  id: number;
-  title: string;
-  image: StaticImageData;
-}
-
-const latestNewData: IlatestNewData[] = [
-  { id: 1, title: "Soft Textiles in Minimalist Spaces", image: softImage },
-  {
-    id: 2,
-    title: "Transform Living Space with Handmade Pottery",
-    image: transformImage,
-  },
-  {
-    id: 3,
-    title: "Serene Bathroom: The Beauty of Functional Art",
-    image: sereneImage,
-  },
-];
 interface IbestSellerProductsData {
   id: number;
   title: string;
@@ -41,64 +25,7 @@ interface IbestSellerProductsData {
   image: string | StaticImageData;
   sale?: boolean | null;
 }
-const bestSellerProductsData: IbestSellerProductsData[] = [
-  {
-    id: 1,
-    title: "Cozy Reading Chair",
-    price: 350.0,
-    actualPrice: null,
-    image: "/assets/images/allProducts/cozy_reading_chair.webp",
-    sale: false,
-  },
-  {
-    id: 2,
-    title: "Aalto Vase",
-    price: 90.0,
-    actualPrice: 199.0,
-    image: softImage,
-    sale: true,
-  },
-  {
-    id: 3,
-    title: "Wooden Rocking Chair",
-    price: 220.0,
-    actualPrice: null,
-    image: softImage,
-    sale: true,
-  },
-  {
-    id: 4,
-    title: "Modern Floor Lamp",
-    price: 180.0,
-    actualPrice: 199.0,
-    image: softImage,
-    sale: false,
-  },
-  {
-    id: 5,
-    title: "Urna Ceramic Vase",
-    price: 95.0,
-    actualPrice: null,
-    image: softImage,
-    sale: true,
-  },
-  {
-    id: 6,
-    title: "Decorative Wall",
-    price: 75.0,
-    actualPrice: null,
-    image: softImage,
-    sale: true,
-  },
-  {
-    id: 7,
-    title: "Terracotta Plant Pots",
-    price: 35.0,
-    actualPrice: 99.0,
-    image: softImage,
-    sale: true,
-  },
-];
+const bestSellerProductsData: IbestSellerProductsData[] = bestSellData;
 
 const ImagePriceCard = ({ varriant }: Icard) => {
   // const [rating, setRating] = useState({ review: "", rating: 0 });

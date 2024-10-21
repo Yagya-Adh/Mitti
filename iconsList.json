@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "icon": "/assets/icons/facebook-svgrepo-com.svg",
+    "name": "facebook"
+  },
+  {
+    "id": 2,
+    "icon": "/assets/icons/instagram-svgrepo-com.svg",
+    "name": "Instagram"
+  },
+  {
+    "id": 3,
+    "icon": "/assets/icons/linkedin-svgrepo-com.svg",
+    "name": "Linkein"
+  },
+  {
+    "id": 4,
+    "icon": "/assets/icons/pinterest-svgrepo-com.svg",
+    "name": "Pinterest"
+  },
+  {
+    "id": 5,
+    "icon": "/assets/icons/youtube-play-svgrepo-com.svg",
+    "name": "Youtube"
+  }
+]
