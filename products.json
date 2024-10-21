@@ -8,19 +8,67 @@
     "price": 350.0,
     "actualPrice": null,
     "image": "/assets/images/allProducts/cozy_reading_chair.webp",
+    "sampleImage": [
+      {
+        "id": 1,
+        "imageSample": "/assets/images/allProducts/cozy-chair/sample1.jpeg"
+      },
+      {
+        "id": 2,
+        "imageSample": "/assets/images/allProducts/cozy-chair/sample2.jpeg"
+      },
+      {
+        "id": 3,
+        "imageSample": "/assets/images/allProducts/cozy-chair/sample3.jpeg"
+      },
+      {
+        "id": 4,
+        "imageSample": "/assets/images/allProducts/cozy-chair/sample4.jpeg"
+      }
+    ],
     "sale": false,
     "productInformation": {
-      "id": 1,
       "describle": [
         {
           "id": 1,
-          "slug": "Introducing the Hanging Lamp, a perfect blend of elegance and functionality designed to illuminate your space with style. This versatile lighting solution is crafted to suit various interiors, from modern minimalist to rustic chic, making it an ideal choice for any room in your home. Its sleek design features a stunning combination of high-quality materials, including brushed metal and hand-blown glass, ensuring both durability and aesthetic appeal. The Hanging Lamp provides ample light while adding a touch of sophistication to your decor, making it a statement piece that enhances the ambiance of your living space."
+          "slug": "Welcome to the world of comfort and relaxation with our cozy reading chair. Designed with your ultimate comfort in mind, this chair is more than just a piece of furniture; it's your personal sanctuary, where you can immerse yourself in the world of literature and escape from the hustle and bustle of everyday life."
+        }
+      ],
+      "features": [
+        {
+          "id": 1,
+          "title": "Ergonomic Design:",
+          "slug": "Our Cozy Reading Chair is meticulously crafted with an ergonomic design to provide optimal support for your body while you indulge in your favorite books. The contoured shape of the chair ensures that you can sit for hours without experiencing any discomfort."
         },
         {
           "id": 2,
-          "slug": "The Hanging Lamp is not just about aesthetics; it also offers practical benefits. With adjustable height settings, you can customize the lighting to suit your needs, whether you're creating a cozy reading nook or brightening up a dining area. Its energy-efficient LED bulbs provide long-lasting, eco-friendly illumination, reducing your energy consumption and lowering your electricity bills. Easy to install and maintain, the Hanging Lamp is the perfect addition to your home, combining style, functionality, and sustainability in one beautiful package. Illuminate your world with the Hanging Lamp and experience the perfect blend of form and function."
+          "title": "Plush Cushioning:",
+          "slug": "Sink into luxurious comfort with the plush cushioning of our reading chair. The generous padding not only cradles your body but also retains its shape, ensuring long-lasting support and durability."
+        },
+        {
+          "id": 3,
+          "title": "Armrests and Lumbar Support:",
+          "slug": "Say goodbye to strained arms and achy backs! Our reading chair features padded armrests and built-in lumbar support, allowing you to maintain proper posture and relax without any tension."
         }
-      ]
+      ],
+      "benefits": [
+        {
+          "id": 1,
+          "title": "Promotes Relaxation:",
+          "slug": "Reading Create your own reading oasis with our Cozy Reading chair. Its inviting design encourages relaxation, allowing you to escape into the world of literature and unwind after a hectic day."
+        },
+        {
+          "id": 2,
+          "title": "Enhances Comfort:",
+          "slug": "Experience the ultimate in comfort with our reading chair. Whether you're engrossed in a thrilling novel or catching up on your favorite magazine, you'll love the luxurious feel of our plush cushioning and supportive design."
+        },
+        {
+          "id": 3,
+          "title": "Improves Posture:",
+          "slug": "Maintain proper posture while you read with the ergonomic design of our Cozy Reading Chair. The built-in lumbar support and padded armrests help alleviate strain on your back and shoulders, ensuring a more comfortable experience."
+        }
+      ],
+      "image": "/assets/images/allProducts/cozy-chair/cozyChairProductInfo.jpeg"
     },
     "shippingInformation": {
       "id": 1,
