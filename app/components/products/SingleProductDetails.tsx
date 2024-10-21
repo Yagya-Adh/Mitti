@@ -3,12 +3,23 @@ import Image from "next/image";
 import MainImageBanner from "@/app/components/banner/MainImageBanner";
 import Button from "@/app/components/button/Button";
 import allproductDetails from "@/products.json";
-
+import ProductInformation from "./ProductInformation";
+import TabBar from "./TabBar";
 const data = allproductDetails;
+
+interface Itab {
+  id: number;
+  tabName: string;
+}
+const tabList: Itab[] = [
+  { id: 1, tabName: "Product Info" },
+  { id: 2, tabName: "Shipping Info" },
+  { id: 3, tabName: "Return Info" },
+];
 
 const SingleProductDetails = () => {
   return (
-    <main>
+    <>
       {data?.map((list) => (
         <div key={list.id} className="bg-mitti-bodyColor ">
           <MainImageBanner Title={list.title} />
@@ -68,72 +79,22 @@ const SingleProductDetails = () => {
               </form>
             </aside>
           </section>
-          <ProductFooterSection listData={list.productInformation} />
+          <div className="max-w-screen-2xl mx-auto px-4 font-sans text-mitti-secondaryTextColor">
+            {tabList?.map((list) => (
+              <div className="" key={list.id}>
+                <TabBar
+                  id={tabList}
+                  tabName={list.tabName}
+                  onClickhand={() => alert("clicked")}
+                />
+              </div>
+            ))}
+            <ProductInformation listData={list.productInformation} />
+          </div>
         </div>
       ))}
-    </main>
+    </>
   );
 };
 
 export default SingleProductDetails;
-
-const ProductFooterSection = ({ listData }) => {
-  return (
-    <div className="max-w-screen-2xl mx-auto px-4 font-sans text-mitti-secondaryTextColor">
-      <TabBar />
-      <p>
-        {listData.describle?.map((listing) => (
-          <div key={listing.id}>{listing.slug}</div>
-        ))}
-      </p>
-      <div className="grid grid-cols-10 gap-4 py-5">
-        <div className="col-span-7">
-          <AsideGroup Text="Benifita" data={listData.benefits} />
-          <AsideGroup Text="Feature" data={listData.features} />
-        </div>
-        <aside className="col-span-2">
-          <Image
-            src={listData.image}
-            width={200}
-            height={600}
-            alt="product_image_sample_"
-            className="h-full w-full"
-          />
-        </aside>
-      </div>{" "}
-    </div>
-  );
-};
-
-const AsideGroup = ({ Text, data }) => {
-  return (
-    <aside className="py-5">
-      <h3 className="font-bold font-serif">{Text}</h3>
-      {data?.map((list) => (
-        <p key={list.id} className="py-2">
-          {list.id}. <b> {list.title} </b>
-          {list.slug}
-        </p>
-      ))}
-    </aside>
-  );
-};
-
-const tabList = [
-  { id: 1, tabName: "Product Info" },
-  { id: 2, tabName: "Shipping Info" },
-  { id: 3, tabName: "Return Info" },
-];
-const TabBar = () => {
-  return (
-    <div className=" border-b border-b-black flex items-center justify-center">
-      {tabList?.map((list) => (
-        <div className="" key={list.id}>
-          <h3 className=" text-xl font-serif font-bold mx-3 border-b-2 hover:border-b-mitti-secondaryTextColor py-2">
-            {list.tabName}
-          </h3>
-        </div>
-      ))}
-    </div>
-  );
-};
