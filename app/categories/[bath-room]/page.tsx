@@ -2,7 +2,7 @@
 import ImagePriceCard from "@/app/components/card/ImagePriceCard";
 import React from "react";
 
-const Dining = () => {
+const Bathroom = () => {
   return (
     <div>
       {" "}
@@ -11,4 +11,4 @@ const Dining = () => {
   );
 };
 
-export default Dining;
+export default Bathroom;
