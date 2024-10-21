@@ -65,7 +65,7 @@ const ImagePriceCard = ({ varriant }: Icard) => {
   ) : varriant === "image-price-card" ? (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-        {bestSellerProductsData?.map((list) => (
+        {bestSellerProductsData?.slice(0, 4).map((list) => (
           <div className="flex flex-col py-10 " key={list.id}>
             <div className="overflow-hidden relative flex flex-col justify-center items-center">
               <div className="w-full z-20  bg-transparent relative">
