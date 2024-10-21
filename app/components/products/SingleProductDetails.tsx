@@ -82,7 +82,7 @@ const SingleProductDetails = () => {
             </aside>
           </section>
           <div className="max-w-screen-2xl mx-auto px-4 font-sans text-mitti-secondaryTextColor">
-            <div className="flex flex-row w-full">
+            <div className="flex items-center">
               {tabList?.map((list) => (
                 <TabBar
                   key={list.id}
@@ -92,8 +92,6 @@ const SingleProductDetails = () => {
                 />
               ))}
             </div>
-            {/* {tabList == id ? (
-            ) : null} */}
 
             <ProductInformation listData={list.productInformation} />
             {/* <ShippingInforamtion
