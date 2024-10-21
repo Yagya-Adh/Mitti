@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "starts": 4,
+    "title": "Cozy Reading Chair",
+    "description": "Indulge in ultimate comfort with our Cozy Reading Chair, designed for relaxation and tranquility. Its plush cushions and ergonomic design provide unparalleled support, while the soft, luxurious upholstery adds a touch of elegance to any room. Whether you're delving into a novel or simply unwinding, this chair promises a cozy retreat for endless hours of reading pleasure.",
+    "quantity": 1,
+    "price": 350.0,
+    "actualPrice": null,
+    "image": "/assets/images/allProducts/cozy_reading_chair.webp",
+    "sale": false,
+    "productInformation": {
+      "id": 1,
+      "describle": [
+        {
+          "id": 1,
+          "slug": "Introducing the Hanging Lamp, a perfect blend of elegance and functionality designed to illuminate your space with style. This versatile lighting solution is crafted to suit various interiors, from modern minimalist to rustic chic, making it an ideal choice for any room in your home. Its sleek design features a stunning combination of high-quality materials, including brushed metal and hand-blown glass, ensuring both durability and aesthetic appeal. The Hanging Lamp provides ample light while adding a touch of sophistication to your decor, making it a statement piece that enhances the ambiance of your living space."
+        },
+        {
+          "id": 2,
+          "slug": "The Hanging Lamp is not just about aesthetics; it also offers practical benefits. With adjustable height settings, you can customize the lighting to suit your needs, whether you're creating a cozy reading nook or brightening up a dining area. Its energy-efficient LED bulbs provide long-lasting, eco-friendly illumination, reducing your energy consumption and lowering your electricity bills. Easy to install and maintain, the Hanging Lamp is the perfect addition to your home, combining style, functionality, and sustainability in one beautiful package. Illuminate your world with the Hanging Lamp and experience the perfect blend of form and function."
+        }
+      ]
+    },
+    "shippingInformation": {
+      "id": 1,
+      "slug": "We provide shipping to everyware, with charges. (Coming soon to Singapore!)",
+      "estimatedTime": "5-7 working days."
+    },
+    "returnInformation": {
+      "id": 1,
+      "returnPolicyDescription": [
+        {
+          "id": 1,
+          "slug": "Tortor sagittis orci a scelerisque purus semper eget at lectus urna duis convallis porta nibh venenatis cras sed felis eget neque laoreet suspendisse interdum consectetur libero id faucibus nisl donec pretium vulputate sapien nec sagittis aliquam nunc lobortis. At risus viverra adipiscing at in tellus integer feugiat nisl pretium fusce id velit ut tortor."
+        }
+      ],
+      "policyPoints": [
+        {
+          "id": 1,
+          "item": "Adipiscing elit ut aliquam purus sit amet viverra suspendisse potenti"
+        },
+        {
+          "id": 2,
+          "item": "Neque sodales ut etiam sit amet nisl purus non tellus orci ac auctor"
+        }
+      ]
+    }
+  }
+]

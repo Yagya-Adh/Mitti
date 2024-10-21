@@ -1,8 +1,6 @@
 "use client";
-// import React, { useState } from "react";
 import Button from "../button/Button";
 import Image, { StaticImageData } from "next/image";
-// import { Rating } from "@smastrom/react-rating";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import latestProductData from "@/latestProduct.json";
 import bestSellData from "@/bestSeller.json";
