@@ -16,13 +16,13 @@ const BlogDetails = () => {
   return (
     <div className="bg-mitti-bodyColor">
       <MainImageBanner Title="Cozy Corners: Natural Texture and Warmth" />
-      <section className="mx-auto max-w-screen-2xl">
+      <section className="mx-auto max-w-screen-2xl px-10">
         <Image
           src={"/assets/images/blog/cozyCorn.webp"}
           alt="blog-details"
-          width={500}
-          height={500}
-          className=""
+          width={1600}
+          height={200}
+          className="py-5 px-10"
         />
       </section>
       <DateTime />
