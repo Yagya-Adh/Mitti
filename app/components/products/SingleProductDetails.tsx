@@ -79,23 +79,35 @@ export default SingleProductDetails;
 
 const ProductFooterSection = ({ listData }) => {
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 font-sans text-mitti-secondaryTextColor">
+    <div className="max-w-screen-2xl mx-auto px-4 font-sans text-mitti-secondaryTextColor">
       <TabBar />
       <p>
         {listData.describle?.map((listing) => (
           <div key={listing.id}>{listing.slug}</div>
         ))}
       </p>
-
-      <SectionGroup Text="Benifita" data={listData.benefits} />
-      <SectionGroup Text="Feature" data={listData.features} />
-    </section>
+      <div className="grid grid-cols-10 gap-4 py-5">
+        <div className="col-span-7">
+          <AsideGroup Text="Benifita" data={listData.benefits} />
+          <AsideGroup Text="Feature" data={listData.features} />
+        </div>
+        <aside className="col-span-2">
+          <Image
+            src={listData.image}
+            width={200}
+            height={600}
+            alt="product_image_sample_"
+            className="h-full w-full"
+          />
+        </aside>
+      </div>{" "}
+    </div>
   );
 };
 
-const SectionGroup = ({ Text, data }) => {
+const AsideGroup = ({ Text, data }) => {
   return (
-    <section className="py-5">
+    <aside className="py-5">
       <h3 className="font-bold font-serif">{Text}</h3>
       {data?.map((list) => (
         <p key={list.id} className="py-2">
@@ -103,7 +115,7 @@ const SectionGroup = ({ Text, data }) => {
           {list.slug}
         </p>
       ))}
-    </section>
+    </aside>
   );
 };
 
