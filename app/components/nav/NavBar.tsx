@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import homeLogo from "/public/assets/images/mainLogo.svg";
 import {
   Bars3Icon,
   ShoppingCartIcon,
@@ -41,7 +40,7 @@ const NavBar = () => {
           </div>
           <Link href="/">
             <Image
-              src={homeLogo}
+              src="/assets/images/mainLogo.svg"
               height={120}
               width={120}
               alt="main_logo_"

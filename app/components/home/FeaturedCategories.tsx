@@ -1,36 +1,15 @@
 "use client";
-
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import SectionHeading from "../heading/SectionHeading";
-import bathroomImage from "/public/assets/images/home/featured/bathroom.webp";
-import livingImage from "/public/assets/images/home/featured/Living Room.webp";
-import homeDecorImage from "/public/assets/images/home/featured/Home decor.webp";
 import CrossMarquee from "../marquee/CrossMarquee";
-
+import latestFeaturedData from "@/featuredImageData.json";
 interface IlatestNewData {
   id: number;
   title: string;
-  image: StaticImageData;
+  image: string;
 }
-const latestNewData: IlatestNewData[] = [
-  { id: 1, title: "Bathroom", image: bathroomImage },
-  {
-    id: 2,
-    title: "Living Room",
-    image: livingImage,
-  },
-  {
-    id: 3,
-    title: "Home Decor",
-    image: homeDecorImage,
-  },
-  {
-    id: 4,
-    title: "Dining",
-    image: homeDecorImage,
-  },
-];
+const latestNewData: IlatestNewData[] = latestFeaturedData;
 const FeaturedCategories = () => {
   return (
     <>
@@ -44,9 +23,10 @@ export default FeaturedCategories;
 
 const FeaturedCard = () => {
   return (
-    <div className="bg-mitti-darkBodyColor">
+    <section className="bg-mitti-darkBodyColor">
       <div className="mx-auto max-w-screen-2xl px-10">
         <SectionHeading
+          varriant="default"
           title="Featured Categories"
           describe="Browse our curated collections for every style."
           buttonName="All Categories"
@@ -73,6 +53,6 @@ const FeaturedCard = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

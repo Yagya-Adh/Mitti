@@ -7,7 +7,7 @@ interface IpictureProps {
   text: string;
   image: string;
 }
-const PictureCard = ({ image, text, key }: IpictureProps) => {
+const PictureCard = ({ key, image, text }: IpictureProps) => {
   return (
     <aside key={key} className=" relative py-4">
       <Image

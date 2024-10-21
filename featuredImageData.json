@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Bathroom",
+    "image": "/assets/images/home/featured/bathroom.webp"
+  },
+  {
+    "id": 2,
+    "title": "Living Room",
+    "image": "/assets/images/home/featured/Living Room.webp"
+  },
+  {
+    "id": 3,
+    "title": "Home Decor",
+    "image": "/assets/images/home/featured/Home decor.webp"
+  },
+  {
+    "id": 4,
+    "title": "Dining",
+    "image": "/assets/images/home/featured/Home decor.webp"
+  }
+]

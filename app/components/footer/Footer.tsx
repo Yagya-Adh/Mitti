@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import mainLogo from "/public/assets/images/mainLogo.svg";
 import footerGridData from "@/footerData.json";
 import SocialList from "../social/SocialList";
 
@@ -49,7 +48,7 @@ const GridOne = () => {
   return (
     <div className="flex flex-col">
       <Image
-        src={mainLogo}
+        src="/assets/images/mainLogo.svg"
         height={120}
         width={120}
         alt="footer_image_"
