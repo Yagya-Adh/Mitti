@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@heroicons/react/16/solid";
 
 interface IPropsButton {
   buttonName: string;
-  variant: string | "button-underline" | "button-default";
+  variant: "button-underline" | "button-default";
   size?: string;
 }
 const Button = ({ buttonName, size, variant }: IPropsButton) =>
