@@ -7,7 +7,7 @@ interface ItabProp {
 const TabBar = ({ id, tabName, onClickhand }: ItabProp) => {
   return (
     <div
-      className="border-b border-b-black flex items-center justify-center"
+      className="border-b border-b-black flex flex-row items-center justify-center"
       key={id}
     >
       <h3

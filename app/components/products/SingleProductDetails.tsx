@@ -5,6 +5,8 @@ import Button from "@/app/components/button/Button";
 import allproductDetails from "@/products.json";
 import ProductInformation from "./ProductInformation";
 import TabBar from "./TabBar";
+import ShippingInforamtion from "./ShippingInforamtion";
+import ReturnInformation from "./ReturnInformation";
 const data = allproductDetails;
 
 interface Itab {
@@ -80,16 +82,29 @@ const SingleProductDetails = () => {
             </aside>
           </section>
           <div className="max-w-screen-2xl mx-auto px-4 font-sans text-mitti-secondaryTextColor">
-            {tabList?.map((list) => (
-              <div className="" key={list.id}>
+            <div className="flex flex-row w-full">
+              {tabList?.map((list) => (
                 <TabBar
-                  id={tabList}
+                  key={list.id}
+                  id={list.id}
                   tabName={list.tabName}
                   onClickhand={() => alert("clicked")}
                 />
-              </div>
-            ))}
+              ))}
+            </div>
+            {/* {tabList == id ? (
+            ) : null} */}
+
             <ProductInformation listData={list.productInformation} />
+            {/* <ShippingInforamtion
+              title="Shipping Details"
+              listData={list.shippingInformation}
+            /> */}
+
+            {/*   <ReturnInformation
+              title="Return Policy"
+              listData={list.returnInformation}
+            /> */}
           </div>
         </div>
       ))}
