@@ -22,7 +22,9 @@ const SectionHeading = ({
     `}
     >
       <div className="text-mitti-secondaryTextColor">
-        <h2 className="text-4xl font-serif max-w-sm capitalize">{title}</h2>
+        <h2 className="text-4xl font-serif max-w-sm capitalize text-black">
+          {title}
+        </h2>
         <p>{describe && describe}</p>
       </div>
       <div>

@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import SectionHeading from "../heading/SectionHeading";
-// import side from "@/public/assets/images/home/autoslide/chairTable.webp";
 
 const autoSlideImageData = [
   {
@@ -10,15 +9,18 @@ const autoSlideImageData = [
     image: "/assets/images/home/autoslide/chairTable.webp",
     imageTwo: "/assets/images/home/autoslide/chairTable.webp",
   },
-  //   {
-  //     id: 1,
-  //     image: "/assets/images/home/autoslide/chairTable.webp",
-  //     imageTwo: "/assets/images/home/autoslide/chairTable.webp",
-  //   },
-  //   { id: 3, image: "/assets/images/home/autoslide/chairTable.webp" },
-  //   { id: 4, image: "/assets/images/home/autoslide/chairTable.webp" },
-  //   { id: 5, image: "/assets/images/home/autoslide/chairTable.webp" },
+  {
+    id: 2,
+    image: "/assets/images/home/autoslide/chairTable.webp",
+    imageTwo: "/assets/images/home/autoslide/chairTable.webp",
+  },
+  {
+    id: 3,
+    image: "/assets/images/home/autoslide/chairTable.webp",
+    imageTwo: "/assets/images/home/autoslide/chairTable.webp",
+  },
 ];
+
 const AutoSlide = () => {
   return (
     <section className="mx-auto max-w-screen-2xl px-4 overflow-hidden">
@@ -45,13 +47,18 @@ export default AutoSlide;
 
 const AutoSiderImageGroup = () => {
   return (
-    <section>
-      {autoSlideImageData?.map((list) => (
-        <div key={list.id} className="grid grid-cols-2  gap-4">
-          <Image src={list.image} alt="image_" width={600} height={600} />
-          <Image src={list.imageTwo} alt="image_" width={600} height={600} />
-        </div>
-      ))}
+    <section className="relative overflow-hidden w-full h-[600px]">
+      <div className="infinite-slider flex">
+        {autoSlideImageData.concat(autoSlideImageData).map((list, index) => (
+          <div
+            key={index}
+            className="flex-shrink-0 w-full grid grid-cols-2 gap-x-4"
+          >
+            <Image src={list.image} alt="image_" width={600} height={600} />
+            <Image src={list.imageTwo} alt="image_" width={600} height={600} />
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
