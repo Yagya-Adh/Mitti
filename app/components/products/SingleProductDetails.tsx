@@ -92,7 +92,7 @@ const SingleProductDetails = () => {
                 />
               ))}
             </div>
-
+            {/* here ... */}
             <ProductInformation listData={list.productInformation} />
             {/* <ShippingInforamtion
               title="Shipping Details"

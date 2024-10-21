@@ -20,7 +20,7 @@ const categoryLink = [
   {
     id: 1,
     image: "/assets/images/category/bathroom.webp",
-    pageLink: "/categories/bathroom",
+    pageLink: "/categories/bath-room",
     title: "Bathroom",
   },
   {
