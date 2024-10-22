@@ -1,28 +1,23 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
-import aBrandImage from "/public/assets/images/home/latestArticle/aCompany.svg";
-import xBrandImage from "/public/assets/images/home/latestArticle/companyX.svg";
-import mBrandImage from "/public/assets/images/home/latestArticle/mountainCompany.svg";
-import faceBrandImage from "/public/assets/images/home/latestArticle/faceCompany.svg";
-import leafBrandImage from "/public/assets/images/home/latestArticle/leafCompany.svg";
-import nineBrandImage from "/public/assets/images/home/latestArticle/nineCompany.svg";
-import rBrandImage from "/public/assets/images/home/latestArticle/rCompany.svg";
-import yourBrandImage from "/public/assets/images/home/latestArticle/yourCompany.svg";
+import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 interface IData {
   id: number;
-  brandImage: StaticImageData;
+  brandImage: string;
 }
 const data: IData[] = [
-  { id: 1, brandImage: aBrandImage },
-  { id: 2, brandImage: xBrandImage },
-  { id: 3, brandImage: mBrandImage },
-  { id: 4, brandImage: faceBrandImage },
-  { id: 5, brandImage: rBrandImage },
-  { id: 6, brandImage: leafBrandImage },
-  { id: 7, brandImage: nineBrandImage },
-  { id: 8, brandImage: yourBrandImage },
+  { id: 1, brandImage: "/assets/images/home/latestArticle/aCompany.svg" },
+  { id: 2, brandImage: "/assets/images/home/latestArticle/companyX.svg" },
+  {
+    id: 3,
+    brandImage: "/assets/images/home/latestArticle/mountainCompany.svg",
+  },
+  { id: 4, brandImage: "/assets/images/home/latestArticle/faceCompany.svg" },
+  { id: 5, brandImage: "/assets/images/home/latestArticle/rCompany.svg" },
+  { id: 6, brandImage: "/assets/images/home/latestArticle/leafCompany.svg" },
+  { id: 7, brandImage: "/assets/images/home/latestArticle/nineCompany.svg" },
+  { id: 8, brandImage: "/assets/images/home/latestArticle/yourCompany.svg" },
 ];
 const BrandMarquee = () => {
   return (
