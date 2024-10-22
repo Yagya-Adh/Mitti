@@ -61,14 +61,15 @@ const NavBar = () => {
           <div className="flex items-center justify-between font-mono">
             <Link href={"/login"}>
               <h2 className="flex items-center px-4">
-                <UserIcon className="size-6 hover:transform hover:-rotate-180" />
+                <UserIcon className="size-6 hover:transform hover:-rotateY-180" />
                 <span className="px-1">LOGIN</span>
               </h2>
             </Link>
 
             <Link href={"/cart"}>
-              <h4 className="flex items-center px-4">
-                <ShoppingCartIcon className="size-6 " />
+              <h4 className="flex items-center px-4 ">
+                {/* [perspective:100px][transform-style:perserve-3d] group-hover:[transform:rotateY(180deg)] or, hover:-rotateY-180 */}
+                <ShoppingCartIcon className="size-6 [perspective:100px][transform-style:perserve-3d] group-hover:[transform:rotateY(180deg)]" />
                 <span className="px-1">ITEMS</span>
               </h4>
             </Link>
