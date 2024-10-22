@@ -35,7 +35,7 @@ const ImagePriceCard = ({ varriant }: Icard) => {
    */
   const [popGrow, setPopGrow] = useState<number | null>(null);
 
-  const handlePops = (id) => {
+  const handlePops = (id: number) => {
     setPopGrow(id);
   };
 
@@ -44,7 +44,7 @@ const ImagePriceCard = ({ varriant }: Icard) => {
   };
 
   return varriant === "image-card" ? (
-    <div>
+    <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {latestNewData?.map((list) => (
           <div className="flex flex-col py-10" key={list.id}>
@@ -72,9 +72,9 @@ const ImagePriceCard = ({ varriant }: Icard) => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   ) : varriant === "image-price-card" ? (
-    <div>
+    <>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         {bestSellerProductsData?.slice(0, 4).map((list) => (
           <div
@@ -84,37 +84,47 @@ const ImagePriceCard = ({ varriant }: Icard) => {
             onMouseLeave={resethandlePops}
           >
             <div className="overflow-hidden relative flex flex-col justify-center items-center">
-              <div className="w-full z-20 bg-transparent relative">
-                {list.sale && (
-                  <div className="absolute top-4 left-4">
-                    <button className="z-20 px-2 py-1 bg-mitti-secondaryTextColor text-center text-white">
-                      {"Sale"}
-                    </button>
-                  </div>
-                )}
-              </div>
-
-              <div className="hidden group-hover:absolute hover:top-14 z-40  group:flex">
-                <ShoppingCartIcon className="size-24 bg-white border-2 border-black rounded-full p-2" />
-              </div>
-              <div className="relative">
+              <div className="relative group">
+                <div className="w-full z-20 bg-transparent relative">
+                  {list.sale && (
+                    <div className="absolute top-4 left-4">
+                      <button className="z-20 px-2 py-1 bg-mitti-secondaryTextColor text-center text-white">
+                        {"Sale"}
+                      </button>
+                    </div>
+                  )}
+                </div>
                 <Image
                   src={list.image}
                   width={250}
                   height={250}
-                  className="hover:bg-black group z-10 hover:scale-125  transition-all ease-linear duration-700 h-full w-full"
+                  className=" z-10 group-hover:scale-125  transition-all ease-linear duration-700 h-full w-full"
                   alt="latest_"
                 />
 
                 {popGrow == list.id && (
-                  <div className="absolute top-0 left-0 h-full w-full bg-black/20 flex items-center justify-center ease-linear transition-opacity duration-500">
-                    <Image
+                  <div
+                    className={`
+                    absolute
+                    top-0 left-0
+                    h-full w-full
+                    bg-black/20 
+                    flex items-center
+                    justify-center
+                    ease-linear
+                    transition-opacity 
+                    duration-500                  
+                  `}
+                  >
+                    <ShoppingCartIcon className="size-14 bg-white rounded-full p-2 animate-pulse" />
+
+                    {/* <Image
                       src="/assets/images/gallery/gallery2.svg"
                       width={400}
                       height={400}
                       alt="image_hover"
                       className=" size-10 hover:size-48 transition-all ease-linear duration-500"
-                    />
+                    /> */}
                   </div>
                 )}
               </div>
@@ -133,7 +143,7 @@ const ImagePriceCard = ({ varriant }: Icard) => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   ) : null;
 };
 
