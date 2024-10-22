@@ -9,11 +9,9 @@ interface IfilterProps {
 const FilterComponent = ({ filterClick }: IfilterProps) => {
   return (
     <>
-      <section className="max-w-screen-2xl mx-auto px-4">
+      <section className="max-w-screen-2xl mx-auto ">
         <div className="py-10 flex justify-between items-center">
-          {/* search */}
-
-          <div className="flex  items-center">
+          <div className="flex items-center">
             <input
               type="text"
               placeholder="Search..."

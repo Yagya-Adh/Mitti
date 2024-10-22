@@ -18,18 +18,38 @@ const AllProducts = () => {
         <ImagePriceCard varriant="image-card" />
 
         {open && (
-          <div className="absolute  top-0 h-screen z-40">
-            <div className="bg-mitti-bodyColor h-full w-1/5 p-10">
-              <h1
+          <div className="absolute top-0 h-screen w-1/5 z-40">
+            <div className="bg-mitti-bodyColor h-full p-10">
+              <span
                 className="flex justify-end text-xl"
                 onClick={filterNavBarPop}
               >
                 X
-              </h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              exercitationem iusto facere facilis quasi. Sed mollitia velit,
-              alias facilis quisquam consectetur culpa doloribus nostrum
-              possimus nobis, magni, quae aliquam itaque.
+              </span>
+
+              <section className="py-10">
+                <span className="font-serif text-3xl">Categories</span>
+
+                <ul className="flex flex-col py-4 leading-10">
+                  {navCategoryLink?.map((list) => (
+                    <li
+                      key={list.id}
+                      className={`
+                      max-w-sm  
+                      font-serif
+                      text-mitti-paragraphColor     
+                      cursor-pointer
+                      group  
+                      `}
+                    >
+                      {list.name}
+                      <div className="h-0.5 bg-transparent rounded-full">
+                        <div className="bg-mitti-paragraphColor rounded-full h-0.5 transition-all duration-300 ease-in-out w-0 group-hover:w-full"></div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
             </div>
             <div className="bg-black opacity-80 w-full"></div>
           </div>
@@ -40,3 +60,12 @@ const AllProducts = () => {
 };
 
 export default AllProducts;
+
+const navCategoryLink = [
+  { id: 1, path: "", name: "All Products" },
+  { id: 2, path: "", name: "Bathroom" },
+  { id: 3, path: "", name: "Home decor" },
+  { id: 4, path: "", name: "Dining" },
+  { id: 5, path: "", name: "kitchen" },
+  { id: 6, path: "", name: "Pottery" },
+];

@@ -30,7 +30,7 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav className="bg-mitti-darkBodyColor sticky top-0 z-20">
+      <nav className="bg-mitti-darkBodyColor sticky top-0 z-20 shadow-md">
         <div className="flex flex-row items-center justify-between  max-w-screen-2xl mx-auto ">
           <div
             className="py-5 flex items-center lg:hidden"
@@ -51,7 +51,7 @@ const NavBar = () => {
           <ul className="items-center font-serif hidden lg:flex">
             {routes?.map((list) => (
               <Link href={list.path} key={list.id}>
-                <li className="text-xl p-4 py-5 border-b-4 border-b-transparent hover:border-b-mitti-secondaryTextColor">
+                <li className="text-xl p-4 py-7 border-b-4 border-b-transparent hover:border-b-mitti-secondaryTextColor">
                   {list.routeName}
                 </li>
               </Link>
@@ -66,7 +66,7 @@ const NavBar = () => {
               </h2>
             </Link>
 
-            <Link href={"/cart"}>
+            <Link href={"/"}>
               <h4 className="flex items-center px-4 ">
                 {/* [perspective:100px][transform-style:perserve-3d] group-hover:[transform:rotateY(180deg)] or, hover:-rotateY-180 */}
                 <ShoppingCartIcon className="size-6 hover:[transform:rotateY(180deg)] transition-all ease-in-out duration-500" />
