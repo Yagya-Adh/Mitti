@@ -4,6 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 import latestProductData from "@/latestProduct.json";
 import bestSellData from "@/bestSeller.json";
+import { useState } from "react";
 interface IlatestNewData {
   id: number;
   title: string;
@@ -32,6 +33,16 @@ const ImagePriceCard = ({ varriant }: Icard) => {
     setRating((prevState) => ({ ...prevState, rating: selectStar }));
   };
    */
+  const [popGrow, setPopGrow] = useState<number | null>(null);
+
+  const handlePops = (id) => {
+    setPopGrow(id);
+  };
+
+  const resethandlePops = () => {
+    setPopGrow(null);
+  };
+
   return varriant === "image-card" ? (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -66,9 +77,14 @@ const ImagePriceCard = ({ varriant }: Icard) => {
     <div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         {bestSellerProductsData?.slice(0, 4).map((list) => (
-          <div className="flex flex-col py-10 " key={list.id}>
+          <div
+            className="flex flex-col py-10 "
+            key={list.id}
+            onMouseEnter={() => handlePops(list.id)}
+            onMouseLeave={resethandlePops}
+          >
             <div className="overflow-hidden relative flex flex-col justify-center items-center">
-              <div className="w-full z-20  bg-transparent relative">
+              <div className="w-full z-20 bg-transparent relative">
                 {list.sale && (
                   <div className="absolute top-4 left-4">
                     <button className="z-20 px-2 py-1 bg-mitti-secondaryTextColor text-center text-white">
@@ -81,22 +97,27 @@ const ImagePriceCard = ({ varriant }: Icard) => {
               <div className="hidden group-hover:absolute hover:top-14 z-40  group:flex">
                 <ShoppingCartIcon className="size-24 bg-white border-2 border-black rounded-full p-2" />
               </div>
-              <Image
-                src={list.image}
-                width={250}
-                height={250}
-                className="hover:bg-black group z-10 hover:scale-125  transition-all ease-linear duration-700 h-full w-full"
-                alt="latest_"
-              />
-
-              {/*  <div className="z-40 absolute">
-                <Rating
-                  style={{ maxWidth: 250 }}
-                  value={rating.rating}
-                  onChange={() => handleStars(2)}
-                  className="size-10"
+              <div className="relative">
+                <Image
+                  src={list.image}
+                  width={250}
+                  height={250}
+                  className="hover:bg-black group z-10 hover:scale-125  transition-all ease-linear duration-700 h-full w-full"
+                  alt="latest_"
                 />
-              </div> */}
+
+                {popGrow == list.id && (
+                  <div className="absolute top-0 left-0 h-full w-full bg-black/20 flex items-center justify-center ease-linear transition-opacity duration-500">
+                    <Image
+                      src="/assets/images/gallery/gallery2.svg"
+                      width={400}
+                      height={400}
+                      alt="image_hover"
+                      className=" size-10 hover:size-48 transition-all ease-linear duration-500"
+                    />
+                  </div>
+                )}
+              </div>
             </div>
             <h1 className="text-mitti-paragraphColor font-bold font-serif  py-2">
               {list.title}
@@ -109,13 +130,6 @@ const ImagePriceCard = ({ varriant }: Icard) => {
                   : ""}
               </span>{" "}
             </h3>
-            {/* <div className="py-2">
-              <Button
-              buttonName="Read More"
-              variant="button-underline"
-                size="text-sm"
-                />
-                </div> */}
           </div>
         ))}
       </div>
