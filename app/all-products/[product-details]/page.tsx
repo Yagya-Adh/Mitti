@@ -1,5 +1,4 @@
 "use client";
-
 import SingleProductDetails from "@/app/components/products/SingleProductDetails";
 import RelatedProducts from "@/app/components/products/RelatedProducts";
 

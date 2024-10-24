@@ -3,10 +3,10 @@ import Image from "next/image";
 import MainImageBanner from "@/app/components/banner/MainImageBanner";
 import Button from "@/app/components/button/Button";
 import allproductDetails from "@/products.json";
-import ProductInformation from "./ProductInformation";
+// import ProductInformation from "./ProductInformation";
 import TabBar from "./TabBar";
-import ShippingInforamtion from "./ShippingInforamtion";
-import ReturnInformation from "./ReturnInformation";
+// import ShippingInforamtion from "./ShippingInforamtion";
+// import ReturnInformation from "./ReturnInformation";
 const data = allproductDetails;
 
 interface Itab {
@@ -93,7 +93,7 @@ const SingleProductDetails = () => {
               ))}
             </div>
             {/* here ... */}
-            <ProductInformation listData={list.productInformation} />
+            {/* <ProductInformation listData={list.productInformation} /> */}
             {/* <ShippingInforamtion
               title="Shipping Details"
               listData={list.shippingInformation}
